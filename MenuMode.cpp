@@ -130,6 +130,8 @@ void MenuMode::draw(glm::uvec2 const &drawable_size) {
 			draw_text("*", glm::vec2(s * (-0.5f * width - select_bounce - star_width), y), s);
 			draw_text(label, glm::vec2(s * (-0.5f * width), y), s);
 			draw_text("*", glm::vec2(s * (0.5f * width + select_bounce), y), s);
+		} else {
+			draw_text(label, glm::vec2(s * (-0.5f * width), y), s);
 		}
 
 		y -= choice.padding;
