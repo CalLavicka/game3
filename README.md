@@ -25,7 +25,7 @@ Good code: Although the code itself may not be very good, I like the culling of 
 
 Ugly code: Probably the way I adjusted the starter code to work with multiple lights. I had a lot of trouble getting the blend mode, alpha channels, and depth buffers to cooperate, so that code is a little ugly (but it finally works).
 
-Bad code: The inheretence for enemies. I wanted to get a little more fancy with it but as it stands it really doesn't follow design paradigms for OOP.
+Bad code: The inheritance for enemies. I wanted to get a little more fancy with it but as it stands it really doesn't follow design paradigms for OOP.
 
 # Changes In This Base Code
 
