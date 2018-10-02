@@ -1,11 +1,11 @@
 # Game Information
 (Note: fill in this portion with information about your game.)
 
-Title: (TODO: your game's title)
+Title: The Dark Maze
 
-Author: (TODO: your name)
+Author: Cal Lavicka
 
-Design Document: [TODO: name of design document](TODO: link to design document)
+Design Document: [Maze Escape](http://graphics.cs.cmu.edu/courses/15-466-f18/game3-designs/clavicka/)
 
 Screen Shot:
 
@@ -13,15 +13,19 @@ Screen Shot:
 
 How To Play:
 
-TODO: describe the controls and (if needed) goals/strategy.
+Navigate your way using the WASD keys to the white square at the end of the maze. There's a catch, as the maze is completely dark. Use the mouse to shine a flashlight to help see ahead. Avoid the gaze of the guards or the flying scouts looking down from below, so stay in the shadow as when spotted you will lose the game.
 
 Changes From The Design Document:
 
-TODO: what did you need to add/remove/modify from the original design? Why?
+Not much was changed. Didn't really have time to implement powerups.
 
 Good / Bad / Ugly Code:
 
-TODO: provide examples of code you wrote from this project that you think is good (elegant, simple, useful), bad (hack-y, brittle, unreadable), and ugly (particularly inelegant). Provide a sentence or two of justification for the examples.
+Good code: Although the code itself may not be very good, I like the culling of lights off-screen. Light rendering is very taxing as for each light you have to render the scene twice, so by removing the flashlights off-screen it allowed me to have more without lagging the game too much. I also appreciate my maze generation code (which is simpler than what I did for game1)
+
+Ugly code: Probably the way I adjusted the starter code to work with multiple lights. I had a lot of trouble getting the blend mode, alpha channels, and depth buffers to cooperate, so that code is a little ugly (but it finally works).
+
+Bad code: The inheretence for enemies. I wanted to get a little more fancy with it but as it stands it really doesn't follow design paradigms for OOP.
 
 # Changes In This Base Code
 
